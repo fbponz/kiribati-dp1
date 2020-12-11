@@ -1,0 +1,2 @@
+index;nombre;apellidos;edad;genero;email;profesion;ciudad_origen;id_consulta;tiempo_consulta;renta_total;disponible_alquiler;te_gusta_playa;te_gusta_montaña;te_gusta_frio;te_gusta_calor;preferencia_costevida;seguro_salud;actividad_aire_libre;importancia_seguridad
+1;'Angel';'Salvem';27;'Masculino';'AngelSalvem@gmail.com';'Ingeniero';'Valladolid';1;'20201211';25000.0;650.0;1;0;0;1;1;0;1;0
