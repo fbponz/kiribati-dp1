@@ -8,9 +8,9 @@ Un match entre tú y la ciudad que mejor encaja contigo
 
 
 
-##Equipo KIRIBATI 
-*Lluis LLoret
-*Marco Colapietro
-*Gonzalo  Alberola
-*Marta Álvarez
-*Borja Ponz
+## Equipo KIRIBATI 
+* Lluis LLoret
+* Marco Colapietro
+* Gonzalo  Alberola
+* Marta Álvarez
+* Borja Ponz
