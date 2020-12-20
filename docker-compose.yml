@@ -37,7 +37,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./web:/var/www/html
+      - ./web/html/:/var/www/html
     links:
       - postgres
 
@@ -45,6 +45,8 @@ services:
     image: apache/nifi:latest
     container_name: nifi
     restart: always
+    volumes:
+      - ./nifi/:/home/nifi/
     ports:
       - 8080:8080
     

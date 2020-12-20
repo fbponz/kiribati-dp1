@@ -25,6 +25,11 @@ Se puede acceder a la pagina web desde -> http://localhost:80
 
 ### Ingestión datos
 se puede acceder al pnale de nifi -> http://localhost:8080
+si se desea acceder al fichero que hay que ingestar kiridata_ranks.csv se encuentra en la
+ruta local
+
+    /home/nifi/
+    
 <br>
 
 ### Base de datos 
