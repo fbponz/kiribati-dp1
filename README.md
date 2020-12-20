@@ -1,25 +1,51 @@
 # kiribati-dp1
 Edem Kiribati-dp1
 
-Una start up capaz de elegir la ciudad ideal para el usuario en función de criterios objetivos y personales. 
+Una start up capaz de elegir la ciudad ideal para el cliente en función de criterios objetivos y personales. 
 
 Un match entre tú y la ciudad que mejor encaja contigo 
 
-Web -> http://localhost:80
+Para ejecutar el sistema del MVP es necesario descargar el repositorio y mediante el uso de la terminal consola, Lanzar el siguiente comando.
 
-nifi -> http://localhost:8080
+    $ docker-compose up -d
 
-postgres -> Puerto 5432
-    User Kiriuser
-    Password Kiripass
+Una vez se ha terminado de trabajar se recomienda parar el contenedor haciendo un 
 
-pgadmin -> http://localhost:5050
-    email -> kiribati@kiriweb.org
-    password -> Kiripass
+    $ docker-compose down
+
+<br>
+
+## Solución MVP
+<br>
+
+### Pagina web
+
+Se puede acceder a la pagina web desde -> http://localhost:80
+<br>
+
+### Ingestión datos
+se puede acceder al pnale de nifi -> http://localhost:8080
+<br>
+
+### Base de datos 
+la base de datos postgres está mapeada en el puerto 5432
+
+| User      | kiriuser     |
+| :------------- | -----------: |
+|  Password | kiripass    |
+<br>
+
+### Pgadmin panel
+pgadmin -> <http://localhost:5050>
+| E-mail      | kiribati@kiriweb.org    |
+| :------------- | -----------: |
+| Password | Kiripass |   
+
+### Panel de Business Intelligence
 
 metabase -> http://localhost:3000
 
-
+<br>
 
 ## Equipo KIRIBATI 
 * Lluis LLoret

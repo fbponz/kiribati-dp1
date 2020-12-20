@@ -7,7 +7,7 @@ services:
     build: 
       context: ./bd
       dockerfile: Dockerfile
-    image: kiribati_dp1:1.0
+    image: kiribati_web_dp1:1.0
     environment:
       POSTGRES_DB: kiriweb
       POSTGRES_USER: kiriuser
