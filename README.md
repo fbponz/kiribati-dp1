@@ -29,10 +29,11 @@ se puede acceder al pnale de nifi -> http://localhost:8080
 
 ### Base de datos 
 la base de datos postgres está mapeada en el puerto 5432
-
-| User      | kiriuser     |
+| Base de datos |  kiriweb|
 | :------------- | -----------: |
-|  Password | kiripass    |
+| Usuario      | kiriuser     |
+| :------------- | -----------: |
+|  Contraseña | kiripass    |
 <br>
 
 ### Pgadmin panel
