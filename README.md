@@ -32,7 +32,6 @@ la base de datos postgres está mapeada en el puerto 5432
 | Base de datos |  kiriweb|
 | :------------- | -----------: |
 | Usuario      | kiriuser     |
-| :------------- | -----------: |
 |  Contraseña | kiripass    |
 <br>
 
