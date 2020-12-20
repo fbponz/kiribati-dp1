@@ -9,10 +9,9 @@ services:
       dockerfile: Dockerfile
     image: kiribati_dp1:1.0
     environment:
+      POSTGRES_DB: kiriweb
       POSTGRES_USER: kiriuser
       POSTGRES_PASSWORD: kiripass
-    volumes:
-      - ./bd/data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     restart: unless-stopped
