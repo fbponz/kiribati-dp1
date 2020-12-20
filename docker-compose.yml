@@ -1,0 +1,68 @@
+version: '3'
+
+services:
+
+  postgres:
+    container_name: postgres
+    build: 
+      context: ./bd
+      dockerfile: Dockerfile
+    image: kiribati_dp1:1.0
+    environment:
+      POSTGRES_USER: kiriuser
+      POSTGRES_PASSWORD: kiripass
+    volumes:
+      - ./bd/data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+   
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4:4.28
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-kiribati@kiriweb.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-Kiripass}
+    volumes:
+       - pgadmin:/root/.pgadmin
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    restart: unless-stopped
+
+  web:
+    image: php:7.3-apache
+    container_name: docker-php
+    ports:
+      - "80:80"
+    volumes:
+      - ./web:/var/www/html
+    links:
+      - postgres
+
+  nifi:
+    image: apache/nifi:latest
+    container_name: nifi
+    restart: always
+    ports:
+      - 8080:8080
+    
+  nifi-registry:
+    image: apache/nifi-registry:latest
+    container_name: nifiregistry
+    restart: always
+    ports:
+      - 18080:18080  
+
+  metabase:
+    container_name: metabase
+    image: metabase/metabase:latest
+    ports:
+      - "3000:3000"
+
+networks:
+  default:
+    driver: bridge
+ 
+volumes:
+    postgres_data:
+    pgadmin:  
