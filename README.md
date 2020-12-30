@@ -22,17 +22,6 @@ Una vez se ha terminado de trabajar se recomienda parar el contenedor haciendo u
 
 Se puede acceder a la pagina web desde -> http://localhost:80
 
-#### API Backend
-
-se ha implementado una aplicación backend con las siguientes API REST
-| Comando | Ruta | Descripción  |
-| :-------| ----- | -----------: |
-| POST | http://localhost:80/api/kbClient | Inserta en la tabla client |
-| POST | http://localhost:80/api/kbQuery | Inserta en la tabla query |
-| POST | http://localhost:80/api/kbResults | Inserta en la tabla results |
-| GET | http://localhost:80/api/kbResults/{id_query}| Lee el resultado de una consulta a la tabla query |
-| POST | http://localhost:80/api/kbFeedbackResult | Inserta en la tabla results |
-| GET | http://localhost:80/api/kbDataset| Lee los datos de nuestro dataset |
 
 #### Esquema base de datos
 

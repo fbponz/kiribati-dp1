@@ -58,14 +58,41 @@ $dataset = $resultado->fetchAll();
 $puntuacion_city_prev = 0;
 $puntuacion_city = 0;
 $result_city = 'Sin ciudad';
-for ($handler = 1; $handler <= 6; $handler++) {
+for ($handler = 0; $handler < 6; $handler++) {
 
-    $punt_beach = (($datos_query[0]['like_beach'] * $dataset[$handler]['km_beach_rank'])&(30.0 > $dataset[$handler]['km_to_beach']));
-    $punt_montain = (($datos_query[0]['like_montain'] * 0.5)&(100.0 > $dataset[$handler]['altitude']));
-    $punt_temp_hot = (($datos_query[0]['like_hot'] * $dataset[$handler]['temp_rank'])&(15.0 < $dataset[$handler]['temp']));
-    $punt_temp_cold = (($datos_query[0]['like_cold'] * $dataset[$handler]['temp_rank'])&(15.0 > $dataset[$handler]['temp']));
-    $punt_cost_living = ($datos_query[0]['cost_of_living']*(1.5-$dataset[$handler]['ipc_rank']));
-    $punt_health_insura = ($datos_query[0]['health_insurance']*$dataset[$handler]['prof_ap_rank']);
+    $punt_beach = 0.0;
+    if((30.0 > $dataset[$handler]['km_to_beach']))
+    {
+        $punt_beach = ($datos_query[0]['like_beach'] * (1-$dataset[$handler]['km_beach_rank']));
+    }
+    
+    $punt_montain =0.0;
+    if(100.0 < $dataset[$handler]['altitude'])
+    {
+        $punt_montain = ($datos_query[0]['like_montain'] * 0.5);
+    }
+
+    $punt_temp_hot = 0.0;
+    if(15.0 < $dataset[$handler]['temp'])
+    {
+        $punt_temp_hot = ($datos_query[0]['like_hot']* $dataset[$handler]['temp_rank']);
+    }
+
+    $punt_temp_cold = 0.0;
+    if(15.0 > $dataset[$handler]['temp'])
+    {
+        $punt_temp_cold = ($datos_query[0]['like_cold'] * ($dataset[$handler]['temp_rank']));
+    }
+    
+    if($datos_query[0]['health_insurance']==0)
+    {
+        $punt_health_insura = $dataset[$handler]['prof_ap_rank'];
+    }
+    else
+    {
+        $punt_health_insura = (1.0 - $dataset[$handler]['prof_ap_rank']);
+    }
+    $punt_cost_living = ($datos_query[0]['cost_of_living']*(1.0-$dataset[$handler]['ipc_rank']));
     $punt_outdoo_act = ($datos_query[0]['outdoor_activities']* $dataset[$handler]['green_zone_rank']);
     $punt_criminality = ($datos_query[0]['criminality_preference'] * (1- $dataset[$handler]['criminality_rank']));
 
