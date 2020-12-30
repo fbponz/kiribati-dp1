@@ -28,7 +28,7 @@
 				<!-- One -->
 					<section id="one">
 
-							<h1> Valencia </h1>
+							<h1> <?php echo $_GET["CityResult"]; ?></h1>
 							<h2 id="texto_resultado"> Nuestro algoritmo piensa que es la mejor ciudad
 							donde puedes mudarte.<br />
 							<br/><br/><br/>
@@ -38,9 +38,9 @@
 									<label for="Te parece interesante?">
 										<span>¿Te gustaria mudarte?</span>
 									</label>
-									<select id="TegustaPlaya" name="TegustaPlaya">
-										<option value="si">si</option>
-										<option value="no">no</option>
+									<select id="Mudarte" name="Mudarte">
+										<option value="1">si</option>
+										<option value="0">no</option>
 									</select>
 								</p>
 								<input type="submit" value="Submit">

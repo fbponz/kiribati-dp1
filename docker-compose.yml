@@ -46,7 +46,8 @@ services:
     container_name: nifi
     restart: always
     volumes:
-      - ./nifi/:/home/nifi/
+      - ./nifi/nifi_gen:/home/nifi/
+      - ./nifi/data/:/opt/nifi/nifi-current/data/
     ports:
       - 8080:8080
     
