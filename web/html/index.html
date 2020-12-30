@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Kiribati</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<h1>Somos <strong>Kiribati</strong>, queremos<br />
+					ayudarte a encontrar tu <br/> nueva ciudad.<br />
+					</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+				<section id="one">
+					<header class="major">
+						<h2>Te proponemos invertir 15 minutos<br />
+						para ser feliz el resto de tu vida.</h2>
+					</header>
+
+					<form action="php/procesar.php" method="get">
+						<h3>Localización actual</h3>
+						<p>
+							<label for="city">Ciudad Origen:</label>
+							<input type="text" name="city" id="city">
+						</p>
+						<p>
+							<label for="jobName">¿A que te dedicas?</label>
+							<input type="text" name="jobName" id="jobName">
+						</p>
+						<p>
+							<label for="salary">¿Cuál es tu renta(aproximada)?</label>
+							<input type="text" name="salary" id="salary">
+						</p>
+						
+						<h3>Preferencias deseadas de la ciudad de destino</h3>
+						<p>
+							<label for="rentPayment">
+								<span>¿Cantidad destinada alquiler? (Valores numericos)</span>
+							</label>
+							<p>
+								<input type="text" name="rentPayment" id="rentPayment">
+							</p>
+						</p>
+						<p>
+							<label for="likeBeach">
+								<span>¿Te gusta la playa?</span>
+							</label>
+							<select id="likeBeach" name="likeBeach">
+								<option value="1">si</option>
+								<option value="0">no</option>
+							</select>
+						</p>
+						<p>
+							<label for="likeMontain">
+								<span>¿Te gusta la montaña?</span>
+							</label>
+							<select id="likeMontain" name="likeMontain">
+								<option value="1">si</option>
+								<option value="0">no</option>
+							</select>
+						</p>
+						<p>
+							<label for="likeCold">
+								<span>¿Te gusta el frio?</span>
+							</label>
+							<select id="likeCold" name="likeCold">
+								<option value="1">si</option>
+								<option value="0">no</option>
+							</select>
+						</p>
+						<p>
+							<label for="likeHot">
+								<span>¿Te gusta el calor?</span>
+							</label>
+							<select id="likeHot" name="likeHot">
+								<option value="1">si</option>
+								<option value="0">no</option>
+							</select>
+						</p>
+						<p>
+							<label for="lifeCost">
+								<span>¿Coste de la vida?</span>
+							</label>
+							<select id="lifeCost" name="lifeCost">
+								<option value="0">Bajo</option>
+								<option value="1">Medio</option>
+								<option value="2">Alto</option>
+							</select>
+						</p>
+						<p>
+							<label for="healthInsurance">
+								<span>¿Dispones de seguro privado de salud?</span>
+							</label>
+							<select id="healthInsurance" name="healthInsurance">
+								<option value="1">si</option>
+								<option value="0">no</option>
+							</select>
+						</p>
+						<p>
+							<label for="outdoorsActivities">
+								<span>¿Disfrutas de las actividades al aire libre?</span>
+							</label>
+							<select id="outdoorsActivities" name="outdoorsActivities">
+								<option value="1">si</option>
+								<option value="0">no</option>
+							</select>
+						</p>
+						<p>
+							<label for="citizenSecurity">
+								<span>¿Es importante para ti, la seguridad?</span>
+							</label>
+							<select id="citizenSecurity" name="citizenSecurity">
+								<option value="1">si</option>
+								<option value="0">no</option>
+							</select>
+						</p>
+
+						<h3>Información personal</h3>
+						<p>
+							<label for="name">¿Cuál es tu nombre?</label>
+							<input type="text" name="name" id="name">
+						</p>
+						<p>
+							<label for="surname">¿Cuales son tus apellidos?</label>
+							<input type="text" name="surname" id="surname">
+						</p>
+							<p>
+							<label for="age">¿Cuántos años tienes?</label>
+							<input type="text" name="age" id="age">
+						</p>
+						<p>
+							<label for="gender">
+								<span>¿Cuál es tu genero?</span>
+							</label>
+							<select id="gender" name="gender">
+								<option value="mujer">Mujer</option>
+								<option value="hombre">Hombre</option>
+							</select>
+						</p>
+						<p>
+							<label for="email">Por favor, Introduce tu correo electrónico</label>
+							<input type="text" name="email" id="email">
+						</p>
+						<input type="submit" value="Enviar">
+					</form>
+
+				</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="copyright">
+						<li>&copy; Kiribati</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

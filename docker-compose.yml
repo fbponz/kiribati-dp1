@@ -28,28 +28,18 @@ services:
       - "${PGADMIN_PORT:-5050}:80"
     restart: unless-stopped
 
-  kiribati_frontend:
+  kiribati_web:
     build:
-      context: ./web/client
+      context: ./web
       dockerfile: ./Dockerfile
     ports:
-      - "80:3000"
-    container_name: kiribati_frontend
+      - "80:80"
+    container_name: kiribati_web
     stdin_open: true
     volumes:
-       - ./web/client:/usr/src/app/client
-
-  kiribati_backend:
-    build:
-      context: ./web/server
-      dockerfile: ./Dockerfile
-    image: "kiribati_backend"
-    volumes:
-      - "./web/server/:/usr/src/app"
-    ports:
-      - "5000:5000"
+       - ./web/html:/var/www/html
     links:
-      - postgres
+      - postgres   
 
   nifi:
     image: apache/nifi:latest
