@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" onload="revealCity()">
 
 		<!-- Header -->
 			<header id="header">
@@ -28,12 +28,12 @@
 				<!-- One -->
 					<section id="one">
 
-							<h1> <?php echo $_GET["CityResult"]; ?></h1>
+							<h1> <label id = "CR_lab">No city</label></h1>
 							<h2 id="texto_resultado"> Nuestro algoritmo piensa que es la mejor ciudad
 							donde puedes mudarte.<br />
 							<br/><br/><br/>
 
-							<form action="feedback_resultado.html" method="post">
+							<form action="feedback_procesar.php" method="post">
 								<p>
 									<label for="Te parece interesante?">
 										<span>¿Te gustaria mudarte?</span>
@@ -43,12 +43,19 @@
 										<option value="0">no</option>
 									</select>
 								</p>
+								<input type="hidden" id="IDResults" name="IDResults" value="" />
 								<input type="submit" value="Submit">
 							</form>
 
 							Gracias por confiar en nosotros.<br/>
 							<b> Equipo de Kiribati</b></h2>
-
+						<script>
+							function revealCity(){
+								let params = new URLSearchParams(location.search);
+								document.getElementById('CR_lab').innerHTML = params.get('CityResult'); 
+								document.getElementById('IDResults').value = params.get('IDResult');
+							}
+						</script>
 					</section>
 
 			</div>
