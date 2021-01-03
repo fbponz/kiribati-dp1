@@ -65,7 +65,7 @@ la base de datos postgreSQL está mapeada en el puerto 5432
 <br>
 
 ## Pgadmin panel
-Para hacer al gestor de la base de datos PGADMIN debe hacer desde el navegador en la siguiente dirección <http://localhost:5050>
+Para acceder al gestor de la base de datos PGADMIN debe hacer desde el navegador en la siguiente dirección <http://localhost:5050>
 <br>
 | E-mail      | kiribati@kiriweb.org    |
 | :------------- | -----------: |
