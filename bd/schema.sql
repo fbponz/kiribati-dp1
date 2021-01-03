@@ -69,3 +69,15 @@ CREATE TABLE kiribati_dataset(
   bars_rank                         numeric(3,2)  NOT NULL,
   CONSTRAINT id_ciudad_ds PRIMARY KEY(id_city)
 );
+
+insert into kiribati_dataset(city,avg_rent,idx_ipc,criminality_rate,pp_atention,temp,culture,sport,altitude,km_to_beach,prcntge_zv,bars,temp_rank,cma_rank,ipc_rank,criminality_rank,prof_ap_rank,culture_rank,sports_rank,green_zone_rank,km_beach_rank,bars_rank)values('Palma de Mallorca',687,104.9,62.7,1.47,16.8,74,0.18,24,17.5,9.95,19,0.66,0.5,0.33,0.91,0.16,0.33,0.16,0.83,0.66,1);
+
+insert into kiribati_dataset(city,avg_rent,idx_ipc,criminality_rate,pp_atention,temp,culture,sport,altitude,km_to_beach,prcntge_zv,bars,temp_rank,cma_rank,ipc_rank,criminality_rank,prof_ap_rank,culture_rank,sports_rank,green_zone_rank,km_beach_rank,bars_rank)values('Barcelona',769,105.81,62.7,2.03,16.5,483,0.88,13,1.8,4.42,14.1,0.5,0.83,1,0.91,1,0.91,0.66,0.5,0.33,0.83);
+
+insert into kiribati_dataset(city,avg_rent,idx_ipc,criminality_rate,pp_atention,temp,culture,sport,altitude,km_to_beach,prcntge_zv,bars,temp_rank,cma_rank,ipc_rank,criminality_rank,prof_ap_rank,culture_rank,sports_rank,green_zone_rank,km_beach_rank,bars_rank)values('San Sebastian',730,105.41,41.5,1.87,14.5,46,0.96,12,0.75,10.87,10.7,0.33,0.66,0.83,0.33,0.66,0.16,0.83,1,0.16,0.67);
+
+insert into kiribati_dataset(city,avg_rent,idx_ipc,criminality_rate,pp_atention,temp,culture,sport,altitude,km_to_beach,prcntge_zv,bars,temp_rank,cma_rank,ipc_rank,criminality_rank,prof_ap_rank,culture_rank,sports_rank,green_zone_rank,km_beach_rank,bars_rank)values('Madrid',819,105.29,59.2,1.52,13.7,483,2.01,655,370,3.8,10.6,0.16,1,0.66,0.66,0.33,0.91,1,0.16,1,0.5);
+
+insert into kiribati_dataset(city,avg_rent,idx_ipc,criminality_rate,pp_atention,temp,culture,sport,altitude,km_to_beach,prcntge_zv,bars,temp_rank,cma_rank,ipc_rank,criminality_rank,prof_ap_rank,culture_rank,sports_rank,green_zone_rank,km_beach_rank,bars_rank)values('Sevilla',456,104.8,39.8,1.79,18.6,96,0.45,11,97.7,9.41,3,1,0.16,0.16,0.16,0.5,0.5,0.33,0.66,0.83,0.33);
+
+insert into kiribati_dataset(city,avg_rent,idx_ipc,criminality_rate,pp_atention,temp,culture,sport,altitude,km_to_beach,prcntge_zv,bars,temp_rank,cma_rank,ipc_rank,criminality_rank,prof_ap_rank,culture_rank,sports_rank,green_zone_rank,km_beach_rank,bars_rank)values('Valencia',556,104.98,46.8,1.9,17.4,148,0.56,15,7,4.07,2.1,0.83,0.33,0.5,0.5,0.83,0.66,0.5,0.33,0.5,0.17);

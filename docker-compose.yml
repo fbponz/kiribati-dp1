@@ -40,24 +40,7 @@ services:
        - ./web/html:/var/www/html
     links:
       - postgres   
-
-  nifi:
-    image: apache/nifi:latest
-    container_name: nifi
-    restart: always
-    volumes:
-      - ./nifi/nifi_gen:/home/nifi/
-      - ./nifi/data/:/opt/nifi/nifi-current/data/
-    ports:
-      - 8080:8080
-    
-  nifi-registry:
-    image: apache/nifi-registry:latest
-    container_name: nifiregistry
-    restart: always
-    ports:
-      - 18080:18080  
-
+      
   metabase:
     container_name: metabase
     image: metabase/metabase:latest
