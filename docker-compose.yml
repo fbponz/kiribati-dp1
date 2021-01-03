@@ -44,9 +44,17 @@ services:
   metabase:
     container_name: metabase
     image: metabase/metabase:latest
+    restart: always
     ports:
       - "3000:3000"
-
+    volumes :
+      - ./metabase/metabase.db:/metabase.db
+    environment: 
+      MB_ENCRYPTION_SECRET_KEY: abcdefghijklmnopqurstuvwxyz
+      MB_DB_FILE: /metabase.db
+    depends_on:
+      - postgres
+ 
 networks:
   default:
     driver: bridge
