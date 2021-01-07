@@ -81,7 +81,7 @@ Para acceder al gestor de la base de datos PGADMIN. Se debe realizar desde el na
 
 | E-mail      | kiribati@kiriweb.org    |
 | :------------- | -----------: |
-| Password | Kiripass |   
+| Password | Kiripass |
 
 <br>
 <br>
@@ -91,9 +91,9 @@ Para acceder al gestor de la base de datos PGADMIN. Se debe realizar desde el na
 Para acceder al panel de business Intelligence. Se debe realizar desde el navegador en la siguiente dirección http://localhost:3000 haciendo uso de las siguientes credenciales:
 <br>
 
-| E-mail      | kiribati@kiriweb.org    |
+| E-mail      | kiribati@kiriweb.com |
 | :------------- | -----------: |
-| Password | kiripass1 |   
+| Password | kiripass1 |
 
 <br>
 
