@@ -4,7 +4,7 @@
 
 ### Master en Data Analytics para la Empresa
 
-#### Asignatura Programación Estadística con PYTHON
+#### Data project 1.
 
 * [Lluis LLoret](https://github.com/luisllll)
 * [Marco Colapietro](https://github.com/Marcolapietro)
@@ -12,7 +12,6 @@
 * [Marta Álvarez](https://github.com/maalal)
 * [Borja Ponz](https://github.com/fbponz)
 
-#### 1) kiribati-dp1
 Edem Kiribati-dp1
 
 Una start up, capaz de elegir la ciudad ideal para el cliente en función de criterios objetivos y personales. 
